@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b0ugagf2mujhm"]
+
+[ext_resource type="Texture2D" uid="uid://f18g2b4qk4wb" path="res://background.png" id="1_pfwel"]
+[ext_resource type="Script" uid="uid://n06a2urx5v6n" path="res://button.gd" id="2_b5707"]
+
+[node name="Node2D" type="Node2D" unique_id=1796086328]
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1322785356]
+offset_left = 2.0
+offset_top = -378.0
+offset_right = 1152.0
+offset_bottom = 646.0
+texture = ExtResource("1_pfwel")
+
+[node name="Button" type="Button" parent="." unique_id=2015100973]
+offset_right = 221.0
+offset_bottom = 100.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 48
+text = "Go Back"
+script = ExtResource("2_b5707")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
