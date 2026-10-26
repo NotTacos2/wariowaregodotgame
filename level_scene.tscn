@@ -1,3 +1,78 @@
 [gd_scene format=3 uid="uid://s4jfj8hqeu4u"]
 
+[ext_resource type="Texture2D" uid="uid://f18g2b4qk4wb" path="res://background.png" id="1_3mivm"]
+[ext_resource type="Script" uid="uid://dl8yum14j0jt0" path="res://level_scene.gd" id="1_lwxgr"]
+[ext_resource type="Texture2D" uid="uid://dexid4s77ngqe" path="res://head.png" id="2_lwxgr"]
+
 [node name="Node2D" type="Node2D" unique_id=1828825050]
+script = ExtResource("1_lwxgr")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=852596770]
+offset_left = 2.0
+offset_top = -373.0
+offset_right = 1149.0
+offset_bottom = 651.0
+texture = ExtResource("1_3mivm")
+
+[node name="LevelCount" type="RichTextLabel" parent="." unique_id=1597189900]
+offset_left = 405.0
+offset_top = 317.0
+offset_right = 615.0
+offset_bottom = 421.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "Level #"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1757187543]
+offset_left = 430.0
+offset_top = 429.0
+offset_right = 702.0
+offset_bottom = 593.0
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 42
+text = "0.0"
+
+[node name="headcontainer" type="HBoxContainer" parent="." unique_id=2063761713]
+offset_left = 17.0
+offset_top = 106.0
+offset_right = 1533.0
+offset_bottom = 499.0
+
+[node name="head" type="TextureRect" parent="headcontainer" unique_id=1694918305]
+custom_minimum_size = Vector2(200, 10)
+custom_maximum_size = Vector2(-1, 200)
+layout_mode = 2
+texture = ExtResource("2_lwxgr")
+expand_mode = 1
+
+[node name="head2" type="TextureRect" parent="headcontainer" unique_id=300005424]
+custom_minimum_size = Vector2(200, 1)
+custom_maximum_size = Vector2(-1, 200)
+layout_mode = 2
+offset_transform_position = Vector2(3, 0)
+texture = ExtResource("2_lwxgr")
+expand_mode = 1
+
+[node name="head3" type="TextureRect" parent="headcontainer" unique_id=518671474]
+custom_minimum_size = Vector2(200, 1)
+custom_maximum_size = Vector2(-1, 200)
+layout_mode = 2
+offset_transform_position = Vector2(3, 0)
+texture = ExtResource("2_lwxgr")
+expand_mode = 1
+
+[node name="head4" type="TextureRect" parent="headcontainer" unique_id=840312678]
+custom_minimum_size = Vector2(200, 1)
+custom_maximum_size = Vector2(-1, 200)
+layout_mode = 2
+offset_transform_position = Vector2(3, 0)
+texture = ExtResource("2_lwxgr")
+expand_mode = 1
+
+[node name="head5" type="TextureRect" parent="headcontainer" unique_id=458558164]
+custom_minimum_size = Vector2(200, 1)
+custom_maximum_size = Vector2(-1, 200)
+layout_mode = 2
+offset_transform_position = Vector2(3, 0)
+texture = ExtResource("2_lwxgr")
+expand_mode = 1
