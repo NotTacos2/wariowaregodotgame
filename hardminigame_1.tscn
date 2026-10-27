@@ -1,0 +1,172 @@
+[gd_scene format=3 uid="uid://cgmtocudcp3pd"]
+
+[ext_resource type="Script" uid="uid://cbn7ilywudook" path="res://hardminigame_1.gd" id="1_8u3op"]
+[ext_resource type="Texture2D" uid="uid://f18g2b4qk4wb" path="res://background.png" id="2_8u3op"]
+[ext_resource type="PackedScene" uid="uid://crjv8aeuwcq08" path="res://player.tscn" id="3_p2m88"]
+[ext_resource type="Script" uid="uid://bfdb44f8cu0l8" path="res://bad_head.gd" id="4_p2m88"]
+[ext_resource type="Texture2D" uid="uid://8r4kflnbjr56" path="res://badhead.png" id="5_74avd"]
+[ext_resource type="Texture2D" uid="uid://dexid4s77ngqe" path="res://head.png" id="5_r6amc"]
+[ext_resource type="Script" uid="uid://twkaq8q0rw2" path="res://heads_2.gd" id="6_nqgjs"]
+[ext_resource type="PackedScene" uid="uid://dcse6feo6yn4b" path="res://ThemedTimer.tscn" id="7_rujl2"]
+[ext_resource type="Script" uid="uid://cn1ybmv8iko6o" path="res://heads_3.gd" id="8_d7u3w"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_d0u6y"]
+height = 566.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_g4v7s"]
+height = 644.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_onrkg"]
+size = Vector2(1144, 108)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_g4v7s"]
+radius = 57.31492
+
+[node name="Node2D" type="Node2D" unique_id=8431290]
+script = ExtResource("1_8u3op")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1173546802]
+offset_top = -376.0
+offset_right = 1150.0
+offset_bottom = 648.0
+texture = ExtResource("2_8u3op")
+
+[node name="Border" type="StaticBody2D" parent="." unique_id=1130476031]
+
+[node name="ColorRect" type="ColorRect" parent="Border" unique_id=960771129]
+offset_right = 19.0
+offset_bottom = 648.0
+color = Color(0.18431373, 0.37254903, 0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border" unique_id=775393938]
+position = Vector2(9, 283)
+shape = SubResource("CapsuleShape2D_d0u6y")
+
+[node name="Border2" type="StaticBody2D" parent="." unique_id=1727100386]
+
+[node name="ColorRect" type="ColorRect" parent="Border2" unique_id=794214016]
+offset_left = 1131.0
+offset_top = -11.0
+offset_right = 1151.0
+offset_bottom = 552.0
+color = Color(0.18431373, 0.37254903, 0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Border2" unique_id=141164489]
+position = Vector2(1139, 252)
+shape = SubResource("CapsuleShape2D_g4v7s")
+
+[node name="Platform1" type="StaticBody2D" parent="." unique_id=1414782165]
+
+[node name="ColorRect" type="ColorRect" parent="Platform1" unique_id=1149815548]
+offset_left = -28.0
+offset_top = 542.0
+offset_right = 1193.0
+offset_bottom = 650.0
+color = Color(0.18246126, 0.37245667, 1.4439226e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform1" unique_id=496905190]
+position = Vector2(574, 597)
+shape = SubResource("RectangleShape2D_onrkg")
+
+[node name="Platform2" type="StaticBody2D" parent="." unique_id=1632419099]
+
+[node name="ColorRect" type="ColorRect" parent="Platform2" unique_id=1105479662]
+offset_left = 817.0
+offset_top = 355.0
+offset_right = 1154.0
+offset_bottom = 463.0
+color = Color(0.18246126, 0.37245667, 1.4439226e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2" unique_id=1993177616]
+position = Vector2(1387, 411)
+shape = SubResource("RectangleShape2D_onrkg")
+
+[node name="Platform3" type="StaticBody2D" parent="." unique_id=1786509995]
+
+[node name="ColorRect" type="ColorRect" parent="Platform3" unique_id=347064406]
+offset_left = -1.0
+offset_top = 205.0
+offset_right = 579.0
+offset_bottom = 313.0
+color = Color(0.18246126, 0.37245667, 1.4439226e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform3" unique_id=195580714]
+position = Vector2(8, 257)
+shape = SubResource("RectangleShape2D_onrkg")
+
+[node name="Platform4" type="StaticBody2D" parent="." unique_id=1785418272]
+
+[node name="ColorRect" type="ColorRect" parent="Platform4" unique_id=1639971097]
+offset_left = 873.0
+offset_top = 77.0
+offset_right = 1453.0
+offset_bottom = 185.0
+color = Color(0.18246126, 0.37245667, 1.4439226e-07, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platform4" unique_id=277941031]
+position = Vector2(1445, 131)
+shape = SubResource("RectangleShape2D_onrkg")
+
+[node name="Player" parent="." unique_id=2039894868 instance=ExtResource("3_p2m88")]
+position = Vector2(-99, -113)
+
+[node name="BadHead" type="Node2D" parent="." unique_id=222162017]
+script = ExtResource("4_p2m88")
+
+[node name="TextureRect" type="TextureRect" parent="BadHead" unique_id=55580728]
+custom_minimum_size = Vector2(200, 0)
+custom_maximum_size = Vector2(200, 200)
+offset_left = 946.0
+offset_top = 184.0
+offset_right = 1146.0
+offset_bottom = 384.0
+texture = ExtResource("5_74avd")
+
+[node name="Area2D" type="Area2D" parent="BadHead" unique_id=692751606]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BadHead/Area2D" unique_id=1901830854]
+position = Vector2(1030, 288)
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="Heads2" type="Node2D" parent="." unique_id=2019645431]
+script = ExtResource("6_nqgjs")
+
+[node name="TextureRect" type="TextureRect" parent="Heads2" unique_id=1225873129]
+custom_minimum_size = Vector2(200, 0)
+custom_maximum_size = Vector2(200, 200)
+offset_left = 18.0
+offset_top = 47.0
+offset_right = 218.0
+offset_bottom = 247.0
+texture = ExtResource("5_r6amc")
+
+[node name="Area2D" type="Area2D" parent="Heads2" unique_id=1000502507]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Heads2/Area2D" unique_id=350687111]
+position = Vector2(102, 147)
+shape = SubResource("CircleShape2D_g4v7s")
+
+[node name="ThemedTimer" parent="." unique_id=1258085258 instance=ExtResource("7_rujl2")]
+position = Vector2(41, 34)
+
+[node name="Heads3" type="Node2D" parent="." unique_id=1067263631]
+script = ExtResource("8_d7u3w")
+
+[node name="TextureRect" type="TextureRect" parent="Heads3" unique_id=1019983882]
+custom_minimum_size = Vector2(200, 0)
+custom_maximum_size = Vector2(200, 200)
+offset_left = 874.0
+offset_top = -85.0
+offset_right = 1074.0
+offset_bottom = 115.0
+texture = ExtResource("5_r6amc")
+
+[node name="Area2D" type="Area2D" parent="Heads3" unique_id=1070868463]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Heads3/Area2D" unique_id=740259698]
+position = Vector2(956, 14)
+shape = SubResource("CircleShape2D_g4v7s")
+
+[connection signal="badheads_collected" from="BadHead" to="." method="badhead_collect"]
+[connection signal="heads_collected" from="Heads2" to="." method="heads_collect"]
+[connection signal="heads_collected" from="Heads3" to="." method="heads_collect"]

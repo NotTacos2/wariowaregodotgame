@@ -1,0 +1,143 @@
+[gd_scene format=3 uid="uid://doe8c7rmhot7a"]
+
+[ext_resource type="Script" uid="uid://c00ssnrj4a8v4" path="res://hardminigame_2.gd" id="1_q8bip"]
+[ext_resource type="Texture2D" uid="uid://f18g2b4qk4wb" path="res://background.png" id="2_q8bip"]
+[ext_resource type="Script" uid="uid://c7mutnk6bmxl0" path="res://headbutton.gd" id="3_x83wo"]
+[ext_resource type="Script" uid="uid://dddb6oi8ifx4x" path="res://headbutton_2.gd" id="4_7ab7m"]
+[ext_resource type="Script" uid="uid://b3t0mgejlp3y4" path="res://headbutton_3.gd" id="5_ab4rr"]
+[ext_resource type="Texture2D" uid="uid://8r4kflnbjr56" path="res://badhead.png" id="6_x83wo"]
+[ext_resource type="Script" uid="uid://cj8altdrhx2g" path="res://badheadbutton_4.gd" id="7_7ab7m"]
+[ext_resource type="Script" uid="uid://85ugwimgi36r" path="res://badheadbutton_5.gd" id="8_ab4rr"]
+[ext_resource type="Script" uid="uid://c5a8lbvop81hc" path="res://headbutton_6.gd" id="8_j65xr"]
+[ext_resource type="Script" uid="uid://b01iaev2kcw73" path="res://headbutton_7.gd" id="9_qyjoa"]
+[ext_resource type="Script" uid="uid://cylplk1o4kvyd" path="res://headbutton_9.gd" id="11_qh8t4"]
+[ext_resource type="Script" uid="uid://b13wwj65c60on" path="res://badheadbutton_8.gd" id="11_x3fos"]
+[ext_resource type="Script" uid="uid://bemy6cmajj6rx" path="res://headbutton_10.gd" id="12_y2qqr"]
+[ext_resource type="PackedScene" uid="uid://dcse6feo6yn4b" path="res://ThemedTimer.tscn" id="13_iqph7"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2425y"]
+load_path = "res://.godot/imported/head.png-0428d563356e710cdcd7f6194063b110.ctex"
+
+[node name="Node2D" type="Node2D" unique_id=562987084]
+script = ExtResource("1_q8bip")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=394521351]
+offset_left = -5.0
+offset_top = -383.0
+offset_right = 1147.0
+offset_bottom = 641.0
+texture = ExtResource("2_q8bip")
+
+[node name="headbutton" type="TextureButton" parent="." unique_id=501486849]
+offset_left = 224.0
+offset_top = 407.0
+offset_right = 369.0
+offset_bottom = 546.0
+texture_normal = SubResource("CompressedTexture2D_2425y")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("3_x83wo")
+
+[node name="headbutton2" type="TextureButton" parent="." unique_id=223146766]
+offset_left = 303.0
+offset_top = 185.0
+offset_right = 448.0
+offset_bottom = 324.0
+texture_normal = SubResource("CompressedTexture2D_2425y")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("4_7ab7m")
+
+[node name="headbutton3" type="TextureButton" parent="." unique_id=1174994931]
+offset_left = 555.0
+offset_top = 425.0
+offset_right = 700.0
+offset_bottom = 564.0
+texture_normal = SubResource("CompressedTexture2D_2425y")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("5_ab4rr")
+
+[node name="badheadbutton4" type="TextureButton" parent="." unique_id=1667405079]
+offset_left = 585.0
+offset_top = 157.0
+offset_right = 730.0
+offset_bottom = 296.0
+texture_normal = ExtResource("6_x83wo")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("7_7ab7m")
+
+[node name="badheadbutton5" type="TextureButton" parent="." unique_id=2089746871]
+offset_left = 447.0
+offset_top = 73.0
+offset_right = 592.0
+offset_bottom = 212.0
+texture_normal = ExtResource("6_x83wo")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("8_ab4rr")
+
+[node name="headbutton6" type="TextureButton" parent="." unique_id=1478823404]
+offset_left = 452.0
+offset_top = 285.0
+offset_right = 597.0
+offset_bottom = 424.0
+texture_normal = SubResource("CompressedTexture2D_2425y")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("8_j65xr")
+
+[node name="headbutton7" type="TextureButton" parent="." unique_id=286233411]
+offset_left = 120.0
+offset_top = 276.0
+offset_right = 265.0
+offset_bottom = 415.0
+texture_normal = SubResource("CompressedTexture2D_2425y")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("9_qyjoa")
+
+[node name="badheadbutton8" type="TextureButton" parent="." unique_id=1404789531]
+offset_left = 171.0
+offset_top = 105.0
+offset_right = 316.0
+offset_bottom = 244.0
+texture_normal = ExtResource("6_x83wo")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("11_x3fos")
+
+[node name="headbutton9" type="TextureButton" parent="." unique_id=946546780]
+offset_left = 773.0
+offset_top = 86.0
+offset_right = 918.0
+offset_bottom = 225.0
+texture_normal = SubResource("CompressedTexture2D_2425y")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("11_qh8t4")
+
+[node name="headbutton10" type="TextureButton" parent="." unique_id=1863152114]
+offset_left = 829.0
+offset_top = 228.0
+offset_right = 974.0
+offset_bottom = 367.0
+texture_normal = SubResource("CompressedTexture2D_2425y")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("12_y2qqr")
+
+[node name="ThemedTimer" parent="." unique_id=1258085258 instance=ExtResource("13_iqph7")]
+position = Vector2(1001, 86)
+
+[connection signal="pressed" from="headbutton" to="headbutton" method="_on_pressed"]
+[connection signal="pressed" from="headbutton2" to="headbutton2" method="_on_pressed"]
+[connection signal="pressed" from="headbutton3" to="headbutton3" method="_on_pressed"]
+[connection signal="pressed" from="badheadbutton4" to="badheadbutton4" method="_on_pressed"]
+[connection signal="pressed" from="badheadbutton5" to="badheadbutton5" method="_on_pressed"]
+[connection signal="pressed" from="headbutton6" to="headbutton6" method="_on_pressed"]
+[connection signal="pressed" from="headbutton7" to="headbutton7" method="_on_pressed"]
+[connection signal="pressed" from="badheadbutton8" to="badheadbutton8" method="_on_pressed"]
+[connection signal="pressed" from="headbutton9" to="headbutton9" method="_on_pressed"]
+[connection signal="pressed" from="headbutton10" to="headbutton10" method="_on_pressed"]

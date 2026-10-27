@@ -1,0 +1,46 @@
+[gd_scene format=3 uid="uid://83rr0ohywroh"]
+
+[ext_resource type="Texture2D" uid="uid://f18g2b4qk4wb" path="res://background.png" id="1_4nh4k"]
+[ext_resource type="Script" uid="uid://d0nxhifjt0878" path="res://gameover.gd" id="1_tpdqf"]
+
+[node name="Node2D" type="Node2D" unique_id=1100849149]
+script = ExtResource("1_tpdqf")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=410981570]
+offset_top = -374.0
+offset_right = 1152.0
+offset_bottom = 650.0
+texture = ExtResource("1_4nh4k")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=2037244346]
+offset_left = 320.0
+offset_top = 166.0
+offset_right = 758.0
+offset_bottom = 346.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/normal_font_size = 64
+text = "Game Over :(
+Try again?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=1761024893]
+offset_left = 383.0
+offset_top = 361.0
+offset_right = 713.0
+offset_bottom = 451.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 64
+text = "Yes"
+
+[node name="Button2" type="Button" parent="." unique_id=1848069]
+offset_left = 383.0
+offset_top = 469.0
+offset_right = 713.0
+offset_bottom = 565.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 42
+text = "No (Menu)"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

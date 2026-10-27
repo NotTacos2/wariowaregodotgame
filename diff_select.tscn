@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://bajikukbwuh1w"]
+
+[ext_resource type="Texture2D" uid="uid://f18g2b4qk4wb" path="res://background.png" id="1_1tuah"]
+[ext_resource type="Script" uid="uid://dgcbefkakql8" path="res://diff_select.gd" id="1_ye30k"]
+
+[node name="Node2D" type="Node2D" unique_id=1192792783]
+script = ExtResource("1_ye30k")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=725324574]
+offset_left = -3.0
+offset_top = -378.0
+offset_right = 1145.0
+offset_bottom = 646.0
+texture = ExtResource("1_1tuah")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=2068317237]
+offset_left = 346.0
+offset_top = 137.0
+offset_right = 778.0
+offset_bottom = 272.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/normal_font_size = 48
+text = "Select Your Diffculty"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="." unique_id=2095435083]
+offset_left = 422.0
+offset_top = 303.0
+offset_right = 680.0
+offset_bottom = 399.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 48
+text = "Easy"
+
+[node name="Button3" type="Button" parent="." unique_id=411981770]
+offset_top = -3.0
+offset_right = 258.0
+offset_bottom = 93.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 48
+text = "Go Back"
+
+[node name="Button2" type="Button" parent="." unique_id=247481280]
+offset_left = 422.0
+offset_top = 415.0
+offset_right = 680.0
+offset_bottom = 511.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 48
+text = "Hard"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

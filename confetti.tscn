@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://b33osf410e7s7"]
+
+[sub_resource type="Curve" id="Curve_g4v7s"]
+_data = [Vector2(0, 0.21031755), 0.0, 0.0, 0, 0, Vector2(1, 0.24603182), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[node name="Node2D" type="Node2D" unique_id=1057166094]
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=1100364256]
+explosiveness = 0.6
+randomness = 0.2
+direction = Vector2(0, -1)
+gravity = Vector2(0, 100)
+initial_velocity_min = 65.0
+initial_velocity_max = 130.0
+angular_velocity_min = 281.0
+angular_velocity_max = 281.0
+linear_accel_min = 11.0
+linear_accel_max = 11.0
+scale_amount_max = 300.0
+scale_amount_curve = SubResource("Curve_g4v7s")
+color = Color(0.99999994, 0.17393067, 0.25397944, 1)
+
+[node name="CPUParticles2D2" type="CPUParticles2D" parent="." unique_id=1999094154]
+explosiveness = 0.6
+randomness = 0.2
+direction = Vector2(0, -1)
+gravity = Vector2(0, 100)
+initial_velocity_min = 65.0
+initial_velocity_max = 130.0
+angular_velocity_min = 281.0
+angular_velocity_max = 281.0
+linear_accel_min = 11.0
+linear_accel_max = 11.0
+scale_amount_max = 300.0
+scale_amount_curve = SubResource("Curve_g4v7s")
+color = Color(2.7915835e-06, 0.6146297, 0.772008, 1)
+
+[node name="CPUParticles2D3" type="CPUParticles2D" parent="." unique_id=1883675712]
+explosiveness = 0.6
+randomness = 0.2
+direction = Vector2(0, -1)
+gravity = Vector2(0, 100)
+initial_velocity_min = 65.0
+initial_velocity_max = 130.0
+angular_velocity_min = 281.0
+angular_velocity_max = 281.0
+linear_accel_min = 11.0
+linear_accel_max = 11.0
+scale_amount_max = 300.0
+scale_amount_curve = SubResource("Curve_g4v7s")
+color = Color(0.16740221, 0.48142427, 0, 1)
