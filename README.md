@@ -10,3 +10,8 @@
 ## How would I run this?
 - Import this project to your godot engine!
 ## Showcase
+![Platform Easy](showcase1.png)
+![Clicker Easy](showcase2.png)
+![Platform Hard](showcase3.png)
+![Loading Screen](showcase4.png)
+![Mixing Easy](showcase5.png)
