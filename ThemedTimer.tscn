@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dcse6feo6yn4b"]
+
+[ext_resource type="Script" uid="uid://cwfvmea02vwgj" path="res://themedtimer.gd" id="1_fy4u3"]
+
+[node name="Node2D" type="Node2D" unique_id=1258085258]
+script = ExtResource("1_fy4u3")
+
+[node name="timer" type="RichTextLabel" parent="." unique_id=597473817]
+offset_right = 266.0
+offset_bottom = 136.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/normal_font_size = 48

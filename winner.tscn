@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://dadm1v872irpw"]
+
+[ext_resource type="Script" uid="uid://csmkk2dfnp0nd" path="res://winner.gd" id="1_d3ia8"]
+[ext_resource type="Texture2D" uid="uid://f18g2b4qk4wb" path="res://background.png" id="2_rnxuv"]
+[ext_resource type="PackedScene" uid="uid://b33osf410e7s7" path="res://confetti.tscn" id="3_rnxuv"]
+
+[node name="Node2D" type="Node2D" unique_id=936817232]
+script = ExtResource("1_d3ia8")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=789339337]
+offset_top = -376.0
+offset_right = 1153.0
+offset_bottom = 648.0
+texture = ExtResource("2_rnxuv")
+
+[node name="Button" type="Button" parent="." unique_id=1418938930]
+offset_left = 385.0
+offset_top = 349.0
+offset_right = 694.0
+offset_bottom = 453.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/font_size = 40
+text = "Go Back to Title"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1808320992]
+offset_left = 368.0
+offset_top = 187.0
+offset_right = 709.0
+offset_bottom = 327.0
+theme_override_constants/outline_size = 14
+theme_override_font_sizes/normal_font_size = 48
+text = "Congrats on winning!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Node2D" parent="." unique_id=1057166094 instance=ExtResource("3_rnxuv")]
+position = Vector2(545, 635)
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
